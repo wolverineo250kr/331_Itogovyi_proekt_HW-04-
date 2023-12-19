@@ -1,0 +1,224 @@
+body {
+    background: #C4C4C4;
+}
+
+body .jumbotron {
+    background: #C4C4C4;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image {
+    margin: 10px;
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+
+.chat-messages {
+    height: 700px;
+    overflow-y: scroll;
+    padding: 0px 20px;
+}
+
+.nickname {
+    width: 100%;
+}
+
+.exit {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.kottekst pre {
+    font-size: initial;
+    margin-top: 10px;
+    color: #717171;
+    border-radius: 5px;
+    background: #efefef;
+}
+
+.textright {
+    display: inline-block;
+    float: right;
+}
+
+#whoisChat {
+    display: inline-block;
+}
+
+#listUsers {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 20px;
+}
+
+#listUsers .person {
+    margin-left: 0px;
+    font-size: 13px;
+}
+
+.col-md-6 {
+    position: relative;
+}
+
+#listUsers li {
+    font-size: 12px;
+    font-style: normal;
+    margin-bottom: 10px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#listUsers li img {
+    margin-right: 5px;
+}
+
+.chat-messages .message-line {
+    background: #FFF;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    width: calc(100% - 175px);
+}
+
+.edit-line {
+
+}
+
+#messageInput {
+    width: 100%;
+    border: 0px;
+    height: 39px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.send-message {
+    position: absolute;
+    right: 17px;
+    bottom: 3px;
+    border: 0px;
+    background: transparent;
+}
+
+body .modal {
+    position: fixed;
+    top: 150px;
+    left: calc(50% - 250px);
+    z-index: 1050;
+    padding: 15px;
+    border: 1px solid #8d8d8d;
+    display: block;
+    width: 500px;
+    background: #c8d7d3;
+    height: 170px;
+    overflow: hidden;
+    outline: 0;
+}
+
+.message {
+    background: #fff;
+    padding: 15px;
+}
+
+.message .message-options {
+
+}
+
+.message .message-options a {
+    display: inline-block;
+    width: 100%;
+}
+
+.chat-messages .message-line.me {
+    background: #ebf9ff;
+    float: right;
+}
+
+.chat-messages .message-line .timestamp {
+    color: #666;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.author {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.date {
+    color: gray;
+}
+
+a {
+    color: red;
+    margin-left: 10px;
+}
+
+a.active {
+    color: red;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+#result {
+    display: inline-block;
+    background: aliceblue;
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+}
+
+#result ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#result li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+#result li:hover {
+    background-color: #f0f0f0;
+}
+
+#result li[data-id]:before {
+    content: 'ID: ' attr(data-id) ', ';
+}
+
+#result li[data-email]:before {
+    content: 'Email: ' attr(data-email) ', ';
+}
+
+#result li[data-nickname]:before {
+    content: 'Nickname: ' attr(data-nickname);
+}

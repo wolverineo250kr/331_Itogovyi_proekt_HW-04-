@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.0.0",
+    "fancybox": "^3.5.7"
+  }
+}

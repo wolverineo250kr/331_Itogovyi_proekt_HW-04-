@@ -1,0 +1,8 @@
+{
+  "require": {
+    "twbs/bootstrap": "^5.0",
+    "fancyapps/fancybox": "*",
+    "components/jquery": "3.6.*",
+    "swiftmailer/swiftmailer": "^6.0"
+  }
+}
